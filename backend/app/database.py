@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Use .env DATABASE_URL or your existing PostgreSQL config (port 5434)
-DATABASE_URL = os.getenv("DATABASE_URL") or "postgresql://postgres:Ansari111@localhost:5434/internconnect"
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 engine = create_engine(DATABASE_URL)
 
